@@ -43,6 +43,13 @@ android {
     }
     productFlavors {
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
@@ -63,7 +70,7 @@ dependencies {
     // Navigation
 //    implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
 //    implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
-    "android.arch.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
+     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha11"
 
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
